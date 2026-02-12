@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine? 💕</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating hearts background -->
+    <div class="heart-bg" id="heartBg"></div>
+
+    <!-- Main content -->
+    <div class="container">
+        <!-- Quiz Section -->
+        <div class="quiz" id="quiz">
+            <div class="emoji">💘</div>
+            <!-- CUSTOMIZE: Change this to your partner's name -->
+            <h1>Hi Beautiful!</h1>
+            <p class="message">
+                Before I ask you something special, let's see how well you know us! 😊
+            </p>
+
+            <div class="quiz-question" id="quizQuestion">
+                <h2 id="questionText"></h2>
+                <div class="options" id="options"></div>
+                <p class="quiz-feedback" id="feedback"></p>
+            </div>
+
+            <div class="quiz-progress">
+                Question <span id="currentQuestion">1</span> of 4
+            </div>
+        </div>
+
+        <!-- Valentine Question -->
+        <div class="question" id="question" style="display: none;">
+            <div class="emoji">💘</div>
+            <h1>Hey Beautiful!</h1>
+            <p class="message">
+                You know us so well! 🥰 Now for the most important question...
+            </p>
+            <h1 style="color: #e74c3c; margin-top: 30px;">
+                Will You Be My Valentine? 💕
+            </h1>
+            <div class="button-container" id="buttonContainer">
+                <button class="yes-btn" onclick="handleYes()">Yes! 💖</button>
+                <button class="no-btn" id="noBtn" onclick="handleNo()">No 😢</button>
+            </div>
+        </div>
+
+        <!-- Success Screen -->
+        <div class="success" id="success">
+            <div class="emoji">🎉</div>
+            <h1>Yay! 🥰</h1>
+            <!-- CUSTOMIZE: Personalize your success message -->
+            <p class="message" style="font-size: 1.5em; color: #d63447;">
+                You just made me the happiest person ever! ❤️
+            </p>
+            <p class="message">
+                I can't wait to spend this Valentine's Day with you! 💕
+            </p>
+            <!-- CUSTOMIZE: Add your favorite emojis -->
+            <div class="emoji" style="font-size: 60px; margin-top: 20px;">
+                💑 💝 🌹 😘
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
