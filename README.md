@@ -110,7 +110,7 @@ const quizData = [
 
 **Opening Greeting** - `index.html` line 18:
 ```html
-<h1>Hi Chakli! 🐥</h1>
+<h1>Hi Beautiful! </h1>
 <!-- Change to your partner's name or nickname -->
 ```
 
